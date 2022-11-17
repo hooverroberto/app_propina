@@ -33,82 +33,79 @@ The designs were created to the following widths:
 - Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
 - Weights: 700 */
 
-body{
+body {
     background: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
 }
 
-.container{
+.bi {
+    color: hsl(172, 67%, 45%);
+    font-size: 24px;
+}
+
+.container {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-
-
-.container-row{
-  max-width: 100%;
-  margin: 0 auto;
-  background: hsl(0, 0%, 100%);
+.container-row {
+    max-width: 100%;
+    margin: 0 auto;
+    background: hsl(0, 0%, 100%);
 }
 
-.bg-grisaceo{
-  background: hsl(183, 100%, 15%);
-  color: hsl(0, 0%, 100%);
-  border-radius: 15px;
+.border-container {
+    border-radius: 20px;
 }
 
-button.btn-grisaceo{
-  background: hsl(183, 100%, 15%);
-  border: none;
-  
+.bg-grisaceo {
+    background: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 15px;
 }
 
-button.btn-grisace{
-  background: hsl(186, 14%, 43%);
-  border: none;
- 
+button.btn-grisaceo {
+    background: hsl(183, 100%, 15%);
+    border: none;
+}
+
+button.btn-grisace {
+    background: hsl(172, 67%, 45%);
+    border: none;
 }
 
 i.bi-currency-dollar,
-i.bi-person-fill{
-  color: hsl(186, 14%, 43%);
-}
-span.bg-color{
-  background: hsl(189, 41%, 97%);
+i.bi-person-fill {
+    color: hsl(186, 14%, 43%);
 }
 
-input.bg-color{
-  background: hsl(189, 41%, 97%);
+span.bg-color {
+    background: hsl(189, 41%, 97%);
 }
 
-@media only screen and (min-width: 375px) {
- 
-  .container-row{
-    max-width: 80%;
-    margin: 0 auto;
-    background: hsl(0, 0%, 100%);
-  }
-  
+input.bg-color {
+    background: hsl(189, 41%, 97%);
 }
 
+@media only screen and (min-width: 500px) {
+    .container-row {
+        max-width: 80%;
+        margin: 0 auto;
+        background: hsl(0, 0%, 100%);
+    }
+}
 
 @media only screen and (min-width: 800px) {
-    body {
-      background-color: rgb(253, 194, 0);
+    .container-row {
+        max-width: 90%;
+        margin: 0 auto;
     }
-
-    .container-row{
-      max-width: 90%;
-      margin: 0 auto;
-     
-    }
-    
-  }
+}
 
 
-  @media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
     body {
       background-color: rgb(0, 152, 253);
     }
     
-  }
-
+  } */
