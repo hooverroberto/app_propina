@@ -40,18 +40,19 @@ body {
 
 .bi {
     color: hsl(172, 67%, 45%);
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.container {
-    max-width: 1440px;
+.main {
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .container-row {
-    max-width: 100%;
     margin: 0 auto;
     background: hsl(0, 0%, 100%);
+    border: 1px solid red;
 }
 
 .border-container {
@@ -87,17 +88,25 @@ input.bg-color {
     background: hsl(189, 41%, 97%);
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 375px) {
+    .container-fluid {
+        width: 100%;
+        margin: 0 auto;
+    }
     .container-row {
-        max-width: 80%;
+        min-width: 100%;
         margin: 0 auto;
         background: hsl(0, 0%, 100%);
     }
 }
 
 @media only screen and (min-width: 800px) {
+    .container-fluid {
+        width: 100%;
+        margin: 0 auto;
+    }
     .container-row {
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
     }
 }

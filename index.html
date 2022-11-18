@@ -24,77 +24,79 @@
 
     <title>Tip calculator app</title>
 
-
+    <script src="./main.js" defer></script>
 </head>
 
 <body class="row align-items-center justify-content-center vh-100">
 
-    <div class="container">
-        <div class="container-row rounded-start rounded-5">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 d-flex justify-content-center ">
-                    <div class="p-5 mx-2 justify-content-center align-items-center">
-                        <label for="cost" class="mb-2">Bill</label>
-                        <div class="input-group mb-4">
-                            <span class="input-group-text border-0 bg-color"><i
+    <div class="container-fluid">
+        <div class="main">
+            <p class="text-center mb-5 fs-1">SPLI<br>TTER</p>
+            <div class="container-row border-container">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-6 d-flex justify-content-center border-primary">
+                        <div class="p-5 mx-2 justify-content-center align-items-center">
+                            <label for="cost" class="mb-2">Bill</label>
+                            <div class="input-group mb-4" id="pagar">
+                                <span class="input-group-text border-0 bg-color"><i
                                     class="bi bi-currency-dollar"></i></span>
-                            <input type="text" id="cost" class="form-control border-0 bg-color" aria-label="Dollar amount (with dot and two decimal places)" value="142.55" style="text-align: right">
-                        </div>
-                        <p class="mt-3 mb-5">Select Tip %</p>
-                        <div class="row d-flex justify-content-around">
-                            <!-- <div class="col-sm-12 d-flex justify-content-around"><button class="btn btn-primary btn-block">5%</button> <button>5%</button></div> -->
-                            <div class="col-6 col-lg-4 mb-2">
-                                <button class="btn btn-grisaceo w-100 text-white">5%</button>
+                                <input type="text" id="cost" class="form-control border-0 bg-color text-end" aria-label="Dollar amount (with dot and two decimal places)" value="142.55">
                             </div>
-                            <div class="col-6 col-lg-4">
-                                <button class="btn btn-grisaceo w-100 text-white">10%</button>
+                            <p class="mt-5 mb-5">Select Tip %</p>
+                            <div class="row d-flex justify-content-around">
+                                <!-- <div class="col-sm-12 d-flex justify-content-around"><button class="btn btn-primary btn-block">5%</button> <button>5%</button></div> -->
+                                <div class="col-6 col-lg-4 mb-2">
+                                    <button class="btn btn-grisaceo w-100 text-white">5%</button>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <button class="btn btn-grisaceo w-100 text-white">10%</button>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <button class="btn btn-grisace w-100">15%</button>
+                                </div>
+                                <div class="col-6 col-lg-4 mb-2">
+                                    <button class="btn btn-grisaceo w-100 text-white">20%</button>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <button class="btn btn-grisaceo w-100 text-white">25%</button>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <input type="text" id="cost" class="form-control border-0 bg-color text-end" aria-label="Dollar" value="Custom">
+                                </div>
                             </div>
-                            <div class="col-6 col-lg-4">
-                                <button class="btn btn-grisace w-100">15%</button>
-                            </div>
-                            <div class="col-6 col-lg-4 mb-2">
-                                <button class="btn btn-grisaceo w-100 text-white">20%</button>
-                            </div>
-                            <div class="col-6 col-lg-4">
-                                <button class="btn btn-grisaceo w-100 text-white">25%</button>
-                            </div>
-                            <div class="col-6 col-lg-4">
-                                <button class="btn btn-primary w-100">Custom</button>
-                            </div>
-                        </div>
-                        <label for="cost" class="mb-2 mt-5">Number of People</label>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text border-0 bg-color"><i
+                            <label for="cost" class="mb-3 mt-5">Number of People</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text border-0 bg-color"><i
                                     class="bi bi-person-fill btn-grisace"></i></span>
-                            <input type="text" id="cost" class="form-control border-0 bg-color" aria-label="Dollar amount (with dot and two decimal places)">
+                                <input type="text" id="cost" class="form-control border-0 bg-color text-end" aria-label="Dollar amount (with dot and two decimal places)">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-12 col-md-6 ">
-                    <div class="p-5 m-4 bg-grisaceo">
-                        <div class="row py-5">
-                            <div class="col-6">Tip Amount <br> <span>/ person</span>
-                            </div>
-                            <div class="col-6">
-                                <p class="fs-3" style="text-align: right;"> <span><i
+                    <div class="col-sm-12 col-md-6 ">
+                        <div class="p-5 m-4 bg-grisaceo">
+                            <div class="row py-5">
+                                <div class="col-6">Tip Amount <br> <span>/ person</span>
+                                </div>
+                                <div class="col-6">
+                                    <p class="fs-3" style="text-align: right;"> <span><i
                                             class="bi bi-currency-dollar fs-5 "></i></span> 27.50</p>
 
+                                </div>
                             </div>
-                        </div>
-                        <div class="row py-5 mb-5">
-                            <div class="col-6">Tip Amount <br> <span>/ person</span></div>
-                            <div class="col-6">
-                                <p class="fs-3" style="text-align: right;"> <span><i
+                            <div class="row py-5 mb-5">
+                                <div class="col-6">Tip Amount <br> <span>/ person</span></div>
+                                <div class="col-6">
+                                    <p class="fs-3" style="text-align: right;"> <span><i
                                             class="bi bi-currency-dollar fs-5 "></i></span> 27.50</p>
+                                </div>
                             </div>
+                            <button class=" btn btn-grisace w-100">Reset</button>
                         </div>
-                        <button class=" btn btn-grisace w-100">Reset</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Bill
 
     Select Tip %
